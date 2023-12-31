@@ -1,0 +1,10 @@
+.blog-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(244, 208, 78);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
