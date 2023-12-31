@@ -1,31 +1,13 @@
-import React, { useState } from 'react'
-import "./Faq.css"
-import iconPlus from "../../assets/images/icon-plus.svg";
-import iconMinus from "../../assets/images/icon-minus.svg";
+import React from 'react'
+import './Faqs.css'
+import Container from './Container'
 
-
-const Faq = ({question,answer}) => {
-  const [active,setActive] = useState(false);
-  const handleChangeActive = () => {
-    setActive((prevIcon) => {
-      console.log(prevIcon)
-      return !prevIcon;
-    })
-  }
+function Faqs() {
   return (
-    <article>
-      <p className="question" onClick={handleChangeActive}>{question}
-        {
-          active ?
-          <span><img src={iconMinus} alt="faq-icon"/></span> :
-          <span> <img src={iconPlus} alt="faq-icon"/></span> 
-        }
-      </p>
-      {
-       active && <p className="answer">{answer}</p>
-      }
-    </article>
+    <div className="faq-container grid">
+        <Container />
+    </div>
   )
 }
 
-export default Faq;
+export default Faqs
