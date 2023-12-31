@@ -1,13 +1,13 @@
-import React from 'react'
-import Container from './components/Container'
-import './App.css';
+import React from "react";
+import Faqs from "./components/faq/Faqs";
+import "./App.css";
 
 function App() {
   return (
-    <div className='grid'>
-      <Container/>
+    <div>
+      <Faqs/>
     </div>
   )
 }
 
-export default App
+export default App;
